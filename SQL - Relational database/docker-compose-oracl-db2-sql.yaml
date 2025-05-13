@@ -1,0 +1,17 @@
+version: '3'
+services:
+  db2server:
+    image: ibmcom/db2
+    privileged: true
+    restart: always
+    ports:
+      - "50000:50000"
+    environment:
+      LICENSE: accept
+      DB2INST1_PASSWORD: PASSWD
+      DBNAME: DBNAME
+      DB2COMM: TCPIP
+
+ #docker run -itd --name mydb2 --privileged=true -p 50000:50000 -e LICENSE=accept -e DB2INST1_PASSWORD=<choose an instance password> -e DBNAME=testdb -v <db storage dir>:/database ibmcom/db2
+
+#https://hub.docker.com/r/ibmcom/db2

@@ -1,0 +1,22 @@
+services:
+  neo4j:
+    image: neo4j:latest
+    volumes:
+        - /$HOME/neo4j/logs:/logs
+        - /$HOME/neo4j/config:/config
+        - /$HOME/neo4j/data:/data
+        - /$HOME/neo4j/plugin:/plugins
+    environment:
+        - NEO4J_AUTH_FILE=/run/secrets/neo4j_auth_file
+    ports:
+      - "7474:7474"
+      - "7687:7687"
+    restart: always
+    secrets:
+      - neo4j_auth_file
+secrets:
+  neo4j_auth_file:
+    file: ./neo4j_auth.txt
+
+
+#https://neo4j.com/docs/operations-manual/current/docker/docker-compose-standalone/

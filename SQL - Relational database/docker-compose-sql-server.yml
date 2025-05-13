@@ -1,0 +1,12 @@
+# Use root/example as user/password credentials
+
+services:
+ sqldata:
+    image: mcr.microsoft.com/mssql/server:2017-latest
+    environment:
+      - SA_PASSWORD=Passwd
+      - ACCEPT_EULA=Y
+    ports:
+      - "5434:1433"
+#https://learn.microsoft.com/pt-br/dotnet/architecture/microservices/multi-container-microservice-net-applications/database-server-container
+# or docker run -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=Pass@word' -p 5433:1433 -d mcr.microsoft.com/mssql/server:2017-latest

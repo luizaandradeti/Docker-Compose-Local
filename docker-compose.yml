@@ -1,0 +1,16 @@
+services:
+  nome_imagem:
+    image: neo4j:latest
+    volumes:
+        - 
+        - 
+        - 
+        - 
+        - NEO4J_AUTH_FILE=/run/secrets/neo4j_auth_file
+    ports:
+      - "xxxx:xxxx"
+    restart: x
+
+
+
+#https://neo4j.com/docs/operations-manual/current/docker/docker-compose-standalone/
