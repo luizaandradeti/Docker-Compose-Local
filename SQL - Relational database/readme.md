@@ -37,10 +37,11 @@ Cpanel is integrated with them, if you are a developer, you will be able to see 
 ![alt](imgs/docker5.png)
 
 Read more:
-- https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/L13709compilado.htm
+
 - https://www.ibm.com/docs/pt-br/sdsu/8.0.1?topic=security-password-encryption
 - https://www.hostinger.com.br/tutoriais/o-que-e-criptografia?
-- 
+- https://dev.mysql.com/doc/refman/8.4/en/security.html
+- https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/L13709compilado.htm
 
 > [!NOTE]
 >
