@@ -26,3 +26,17 @@ Cpanel is integrated with them, if you are a developer, you will be able to see 
 ![alt](imgs/php.png)
 
 ![alt](imgs/cpanel/cpannel.png)
+
+
+## Run PHP Image - Example in local environment
+
+![alt](imgs/docker.png)
+![alt](imgs/docker2.png)
+![alt](imgs/docker3.png)
+![alt](imgs/docker4.png)
+![alt](imgs/docker5.png)
+
+
+> [!NOTE]
+>
+> Technical (and local) context 
